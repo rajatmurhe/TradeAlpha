@@ -480,7 +480,7 @@ with tab_opps:
             use_container_width=True,
             height=400,
             column_config={
-                "Ticker": st.column_config.TextColumn("Asset", weight="bold"),
+                "Ticker": st.column_config.TextColumn("Asset"),
                 "Current Price": st.column_config.NumberColumn("LTP", format="₹%.2f"),
                 "Expected Return": st.column_config.NumberColumn("Forecast (24H)", format="%.2f%%", min_value=-0.05, max_value=0.05),
                 "Conviction Score": st.column_config.ProgressColumn("AI Conviction", help="Signal Strength", min_value=0, max_value=100, format="%f"),
